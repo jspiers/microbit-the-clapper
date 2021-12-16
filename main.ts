@@ -6,7 +6,7 @@ input.onSound(DetectedSound.Quiet, function () {
     }
 })
 let isOn = false
-let clapCount: number
+let clapCount = 0
 clapCount = 0
 soundExpression.hello.play()
 basic.forever(function () {
