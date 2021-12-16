@@ -1,13 +1,13 @@
 input.onSound(DetectedSound.Quiet, function () {
-    clapCount += 10
-    if (clapCount > 10) {
+    count += 10
+    if (count > 10) {
         isOn = !(isOn)
-        clapCount = 0
+        count = 0
     }
 })
 let isOn = false
-let clapCount = 0
-clapCount = 0
+let count = 0
+count = 0
 soundExpression.hello.play()
 basic.forever(function () {
     if (isOn) {
@@ -29,7 +29,7 @@ basic.forever(function () {
     }
 })
 loops.everyInterval(100, function () {
-    if (clapCount > 0) {
-        clapCount += -1
+    if (count > 0) {
+        count += -1
     }
 })
